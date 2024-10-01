@@ -1,0 +1,340 @@
+.AddressPageMainWrapper {
+    .address-section {
+        .modal {
+            z-index: 999999999;
+            background-color: rgba(0, 0, 0, 0.604);
+
+            .modal-dialog {
+                min-width: 800px;
+
+                .modal-content {
+                    width: 100% !important;
+
+                }
+            }
+
+            .modal-header {
+                background-color: #FAFAFA;
+
+                h1 {
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 23.44px;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+
+            .modal-left {
+                h3 {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    text-align: left;
+                    color: #111111;
+                }
+
+                label {
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14.06px;
+                    text-align: left;
+                    color: #434343;
+                    margin-bottom: 7px;
+                }
+
+                .name-input {
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 10px;
+                    border: 1px solid #B3B3B3;
+                    padding-left: 10px;
+
+                }
+
+                .name-input:focus {
+                    outline: 1px solid #02400C;
+                }
+
+                .number-input {
+                    width: 100%;
+                    height: 45px;
+                    border: 1px solid #B3B3B3;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    .contry-code {
+                        width: 20%;
+                        height: 45px;
+                        border-right: 1px solid #B3B3B3;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        select {
+                            border: none;
+                        }
+
+                        select:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .number-typing-section {
+                        width: 80%;
+
+                        input {
+                            width: 97%;
+                            height: 42px;
+                            border: none;
+                            padding-left: 10px;
+                        }
+
+                        input:focus {
+                            outline: none;
+                        }
+                    }
+                }
+
+                .address-type {
+                    border: 1px solid black;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19.6px;
+                    text-align: center;
+                    margin-right: 10px;
+                    padding: 10px 14px;
+                    margin-top: 1rem !important;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .active-address-type {
+                    border: 1px solid #02400C;
+                    background: #F0E5FF;
+                    color: #02400C;
+                }
+
+                .check-box {
+                    padding-top: 2rem;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        height: 18px;
+                        width: 18px;
+                        cursor: pointer;
+                    }
+
+                    label {
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 15px;
+                        text-align: justified;
+                        margin-bottom: 0 !important;
+                        margin-left: 10px;
+                        color: #111111;
+                    }
+                }
+            }
+
+            .modal-right {
+                h3 {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    text-align: left;
+                }
+
+                .use-my-location {
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 10px;
+                    border: 1px solid #111111;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    span {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 19.6px;
+                        text-align: center;
+                        color: #111111;
+                    }
+                }
+
+                label {
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14.06px;
+                    text-align: left;
+                    margin-bottom: 12px;
+                    color: #434343;
+                    margin-top: 1rem;
+                }
+
+                input {
+                    width: 100%;
+                    height: 45px;
+                    border: 1px solid #B3B3B3;
+                    padding-left: 10px;
+                    border-radius: 10px;
+                }
+
+                input:focus {
+                    outline: 1px solid #02400C;
+                }
+            }
+
+            .modal-footer {
+                background-color: #FAFAFA;
+                display: flex;
+                justify-content: start;
+
+                button {
+                    background-color: #02400C;
+                    color: white;
+                    border: 1px solid #02400C;
+                    padding: 10px 23px;
+                    border-radius: 10px;
+                    font-family: Roboto;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 24px;
+
+                }
+            }
+        }
+        .address-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                font-family: Roboto;
+                font-size: 21px;
+                font-weight: 600;
+                line-height: 26.25px;
+                text-align: left;
+                color: #111111;
+            }
+
+            button {
+                background-color: #02400C;
+                border: 1px solid #02400C;
+                color: white;
+                padding: 10px 20px;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 17.5px;
+                border-radius: 10px;
+
+            }
+        }
+
+        .address-cards-main {
+            padding-top: 2rem;
+
+            .address-card {
+                width: 100%;
+                border: 1px solid #F3F3F3;
+                border-radius: 4px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+
+                .card-header {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .addressType {
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 19.2px;
+                        background: #FAFAFA;
+                        border-radius: 999px;
+                        margin-right: 10px;
+                        border: none;
+                        padding: 2px 8px;
+                    }
+
+                    .active-address {
+                        background: #F2E8FF;
+                        color: #02400C;
+                    }
+
+                    .edit-btn {
+                        border: none;
+                        background-color: transparent;
+                        color: #02400C;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 16.8px;
+                        letter-spacing: 0.02em;
+
+                    }
+
+                    .menu-dot {
+                        font-size: 24px;
+                        color: #787878;
+                    }
+                }
+
+                .card-title {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 17.5px;
+                    text-align: left;
+                    color: #111111;
+                    padding-top: 10px;
+                }
+
+                p {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17.5px;
+                    text-align: left;
+                    font-variation-settings: 'wdth' 100, 'opsz' 14;
+                    color: #111111;
+                    margin-top: 5PX;
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+
+    @media(max-width:575px){
+        .address-header {
+            h2 {
+                font-size: 15px !important;
+            }
+
+            button {
+                padding: 5px 20px !important;
+                font-size: 12px !important;
+                font-weight: 600;
+                border-radius: 5px !important;
+            }
+        }
+        .address-card {
+            p{
+                font-size: 12px !important;
+            }
+        }
+    }
+}

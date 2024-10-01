@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.HomePageMailWrapper {
+    .HomePageHero {
+        padding-top: 10rem;
+
+        .carousel-item {
+            position: relative;
+
+            .mobile-pick {
+                position: absolute;
+                z-index: 88888;
+                bottom: 0;
+                left: 15%;
+
+            }
+        }
+
+        .hero-content {
+            position: absolute;
+            right: 15%;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            h2 {
+                font-family: Inter;
+                font-size: 30.16px;
+                font-weight: 700;
+                line-height: 42.23px;
+            }
+
+            h1 {
+                font-family: Inter;
+                font-size: 30.16px;
+                font-weight: 700;
+                line-height: 42.23px;
+                text-align: left;
+                color: #08B219;
+            }
+
+            p {
+                font-family: Inter;
+                font-size: 12.3px;
+                font-weight: 400;
+                line-height: 17.22px;
+                text-align: left;
+                color: #535353;
+            }
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+
+        .carousel-indicators {
+            button {
+                width: 12px;
+                height: 4px;
+                border-radius: 10px !important;
+                background-color: #d5d5d5;
+            }
+
+            .active {
+                background-color: black;
+            }
+        }
+    }
+
+    @media(max-width:768px) {
+        .HomePageHero {
+            padding-top: 0 !important;
+            height: 50vh !important;
+
+            .carousel-item {
+                height: 100% !important;
+
+                .mobile-pick {
+                    display: none;
+                }
+            }
+
+            .carousel-inner {
+                height: 50vh;
+
+                img {
+                    height: 100% !important;
+                }
+            }
+
+            .hero-content {
+                width: 100vw !important;
+                left: 50% !important;
+                top: 50%;
+                transform: translate(-50%, -50%) !important;
+
+                h2 {
+                    text-align: center !important;
+                    font-size: 20.16px !important;
+                }
+
+                h1 {
+                    font-size: 25.16px !important;
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                .play-apple {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: center;
+                }
+
+                img {
+                    margin-right: 0rem;
+                }
+            }
+        }
+    }
+
+    @media(min-width:768px) and (max-width:1200px) {
+        .HomePageHero {
+            padding-top: 0 !important;
+
+            .mobile-pick {
+                left: 10px !important;
+                width: 200px !important;
+            }
+
+            .hero-content {
+                h2 {
+                    font-size: 15px !important;
+                }
+
+                h1 {
+                    font-size: 20px !important;
+                    line-height: 20px !important;
+                }
+
+                .play-apple {
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    // ===============================trending-products============================
+    .deals-headng-wrapper {
+        display: flex;
+        padding: 1.4rem;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-family: Roboto;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 31.25px;
+            text-align: left;
+            font-variation-settings: 'wdth' 100, 'opsz' 21;
+
+        }
+
+        .viewAll {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23.44px;
+
+        }
+    }
+
+    .trending-product-card-wrapper {
+        // padding: .5em 10px;
+        overflow: hidden;
+        padding-bottom: 4rem;
+        position: relative;
+
+        .carousel-next-btn-wrapp {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            right: 0;
+            z-index: 66;
+            top: 0;
+            height: 100%;
+            width: 200px;
+            background: linear-gradient(to right, (rgba(0, 0, 0, 0), rgb(255, 255, 255)));
+            justify-content: right;
+            padding-right: 1rem;
+
+            img {
+                cursor: pointer;
+                z-index: 666666;
+            }
+        }
+    }
+
+    .trending-products {
+        padding-top: 1rem;
+        padding-left: 10px;
+
+        h3 {
+            font-family: Roboto;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 26.25px;
+            text-align: left;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .featuredProdCardWrapper {
+            display: flex;
+            grid-area: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .trending-card {
+            padding: 0 10px;
+            width: 252px;
+
+            .featuredProdImage {
+                width: 100%;
+                height: 250px;
+                margin-bottom: 1rem;
+                overflow: hidden;
+            }
+
+            // background-color: red;
+            img {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .rating-box {
+                width: 50px;
+                height: 26px;
+                border-radius: 5px;
+                border: 1px solid #DADADA;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+
+                .ratingStar {
+                    font-size: 14px;
+                    color: #111111;
+                }
+
+                span {
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 0.02em;
+                    color: #111111;
+                    padding-bottom: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .best-seller-box {
+                margin-top: 10px;
+                width: 89px;
+                height: 27px;
+                background: #B271F333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+                letter-spacing: 0.02em;
+                color: #02400C;
+            }
+
+            h6 {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.4px;
+                letter-spacing: 0.02em;
+                margin-top: 10px;
+                color: black;
+
+                strong {
+                    color: #02400C;
+                }
+            }
+
+            p {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16.8px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #1E3354;
+            }
+
+            .price {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19.2px;
+                letter-spacing: 0.02em;
+                color: #111111;
+                margin-right: 10px;
+            }
+
+            .crossed-price {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                letter-spacing: 0.02em;
+                color: #8C8C8C;
+            }
+        }
+    }
+
+    @media(max-width:576px) {
+        .carousel-next-btn-wrapp {
+            width: fit-content !important;
+        }
+    }
+
+    // ======================================product-banner-wrapper=========================
+    .product-banner-wrapper {
+        padding: 1rem 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media(max-width:768px) {
+        .product-banner-wrapper {
+            padding: 1rem 0;
+
+            img {
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+
+    // ======================================hot-categories==============================
+    .hot-categories-wrapper {
+        padding: .4rem 12px;
+        overflow: hidden;
+
+        .hotCategoryWrapper {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        h2 {
+            font-family: Roboto;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 26.25px;
+            text-align: left;
+            color: #111111;
+        }
+
+        .hot-cat-card {
+            width: 120px;
+            margin: auto;
+            height: 120px;
+            border-radius: 15.24px;
+            border: 1px solid #8C31FF;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(#8e31ff2e, #ffff);
+
+            img {
+                width: 100px;
+            }
+
+        }
+
+        p {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #111111;
+            padding-top: 10px;
+        }
+
+    }
+
+    @media(max-width:768px) {
+        .hot-cat-card {
+            width: 100px !important;
+            height: 100px !important;
+        }
+    }
+
+    // =================================top-deals==============================
+    .top-deals {
+        overflow: hidden;
+
+        .topdealsMainCarouselWrapper {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .deals-headng-wrapper {
+            display: flex;
+            padding: 1.4rem;
+            justify-content: space-between;
+            align-items: center;
+
+            .viewAll {
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 23.44px;
+
+            }
+        }
+
+        .top-deals-heading {
+            font-family: Roboto;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 31.25px;
+            color: #111111;
+        }
+
+        .top-deal-card {
+
+            // background-color: red;
+            img {
+                width: 320px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media(max-width:576px) {
+        .top-deal-card {
+
+            // background-color: red;
+            img {
+                width: 300px !important;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media(min-width:991px) and (max-width:1200px) {
+        .top-deal-card {
+
+            // background-color: red;
+            img {
+                width: 300px !important;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // =================================top-deals==============================
+    // =================================limited-time-deals-section==========================
+    #limited-time-deals-section,
+    #top-stores {
+        .limited-time-deals-card {
+            .limited-time-deal-img-container {
+                height: 320px;
+                width: 325px;
+                margin: auto;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+
+                .timer {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 51px;
+                    background-color: #EB2D2D;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        font-family: Roboto;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 23.44px;
+                        text-align: center;
+                        color: white;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+   
+.featured-products{
+    padding-left: 0 !important;
+    padding: 0 !important;
+    @media(max-width:768px){
+        .top-deals-heading{
+            font-size: 18px !important;
+        }
+        .viewAll{
+            font-size: 13px !important;
+        }
+        .trending-product-card-wrapper{
+            // padding: .5rem !important;
+        }
+        .trending-card{
+            width: 180px !important;
+            margin-bottom: 1rem !important;
+            .best-seller-box{
+                font-size: 12px !important;
+                width: fit-content !important;
+                padding: 5px !important;
+                height: fit-content !important;
+
+            }
+            .featuredProdImage{
+                height: 180px;
+            }
+            .price{
+                font-size: 16px;
+            }
+            .crossed-price{
+                font-size: 12px !important;
+            }
+        }
+    }
+}
+    // =================================limited-time-deals-section==========================
+    // ===================================featuredBrands============================
+    #featuredBrands {
+        .featuredBrandsCard {
+            .featuredBrandImage {
+                width: 410px;
+                height: 410px;
+                margin: auto;
+                overflow: hidden;
+                border-radius: 5px;
+                position: relative;
+                // background-color: red;
+
+                .indomei-container {
+                    position: absolute;
+                    width: 176px;
+                    height: 45px;
+                    border-radius: 4px;
+                    border: 1px solid #0000001A;
+                    background-color: white;
+                    bottom: 10px;
+                    left: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .ad {
+                        width: 30px;
+                        height: 30px;
+                        background: #CCCCCC;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18.75px;
+                        color: #717171;
+                    }
+
+                    .indomie-image {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        background: #CCCCCC;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 60%;
+                        }
+
+                    }
+
+                    .indomie-text {
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18.75px;
+                        color: #111111;
+
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media(max-width:768px) {
+        .indomei-container {
+            .indomie-image {
+                overflow: hidden !important;
+
+                img {
+                    width: 100% !important;
+                }
+
+            }
+
+            .indomie-text {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18.75px;
+                color: #111111;
+
+            }
+        }
+    }
+
+    // ===================================featuredBrands============================
+    // =====================================top-stores=============================
+    #top-stores {
+        .tharaonline {
+            background-color: black !important;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    // =====================================top-stores=============================
+    // ======================================newArrivalSection=======================
+    #newArrivals {
+        padding-bottom: 1rem;
+
+        .newArivalCardWrapper {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .newArrivals-card {
+            width: 420px;
+            height: 270px;
+            margin: auto;
+            border-radius: 8px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .recently {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    // ======================================newArrivalSection=======================
+    // =========================================top-brands==========================
+    #top-brands-section {
+        a {
+            text-decoration: none;
+        }
+
+        .top-brand-card {
+            text-align: center;
+
+            h6 {
+                font-family: Roboto;
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 24.61px;
+                color: #111111;
+                margin-top: 10px;
+            }
+
+            p {
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 17.58px;
+                color: #28AF35;
+            }
+        }
+
+        .top-brand-image {
+            margin: auto;
+            width: 189px;
+            height: 189px;
+            border-radius: 50%;
+            background: #F8F8F8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img {
+                width: 60% !important;
+            }
+        }
+    }
+
+    @media(max-width:768px) {
+        .top-brand-image {
+            margin: auto;
+            width: 169px !important;
+            height: 169px !important;
+        }
+    }
+
+    // =========================================top-brands==========================
+    // =======================================recomented-for-you=========================
+    #discount-for-you-section {
+        .recoment-card {
+            width: 330px;
+            height: 330px;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+            margin-bottom: 2rem;
+
+            h3 {
+                font-family: Roboto;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 35.16px;
+                color: #111111;
+            }
+
+            span {
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23.44px;
+                text-align: center;
+
+            }
+
+        }
+
+        .rcmnt-card1 {
+            background: #FFF6C7 !important;
+        }
+
+        .rcmnt-card2 {
+            background: #FFE8C7 !important;
+        }
+
+        .rcmnt-card3 {
+            background: linear-gradient(157.38deg, #FFCD9F 14.7%, rgba(255, 242, 230, 0) 149.06%);
+
+        }
+    }
+
+    // =======================================recomented-for-you=========================
+}

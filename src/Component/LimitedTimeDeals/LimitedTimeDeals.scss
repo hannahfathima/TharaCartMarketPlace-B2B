@@ -1,0 +1,213 @@
+.LimitedTimeDealsMainWrapper {
+    .LimitedTimeDealsWrapper {
+        padding-top: 120px;
+        display: flex;
+
+        .TopDeals-left {
+            max-height: 100vh;
+            position: sticky;
+            top: 120px;
+        }
+
+        .TopDeals-right {
+            overflow: hidden;
+
+            padding: 1rem;
+            max-height: 1000vh;
+
+            .top-deals-heading {
+                img {
+                    margin-right: 10px;
+                }
+
+                font-family: Roboto;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 31.25px;
+                text-align: left;
+                color: black;
+            }
+
+            .carousel-section {
+                padding-top: 1.5rem !important;
+
+                .top-deals-image {
+                    width: 350px;
+                    height: 350px;
+                    margin: auto;
+                    position: relative;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    .time-count {
+                        position: absolute;
+                        height: 51px;
+                        background-color: #EB2D2D;
+                        bottom: 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: Roboto;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 23.44px;
+                        text-align: center;
+                        color: white;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .selectBox-section {
+                padding-top: 1.5rem;
+                display: flex;
+                gap: .5rem;
+            }
+
+            .sort-dropdown {
+                // width: 185px;
+                // height: 35px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                gap: 5px;
+                border: 0.5px solid #00000033;
+                cursor: pointer;
+
+                span {
+                    //styleName: Desktop (lg = <1440px)/body-md;
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 18.2px;
+
+                }
+            }
+
+            .count {
+                width: 20px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20px;
+                border-radius: 50%;
+                background: #EFEFEF;
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 18.2px;
+                color: #02400C;
+            }
+
+            .dropdown-item {
+                cursor: pointer;
+            }
+
+            .products-list-wrapper {
+                padding-top: 2rem;
+
+                .prod-card {
+                    padding: 10px;
+                    width: 100%;
+                    border: 1px solid #F2F2F2;
+                    border-radius: 4px;
+                    margin-bottom: 1rem;
+
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    .card-time-count-down-box {
+                        width: 100%;
+                        height: 26px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: #FFDCDC;
+                        color: #A10000;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16.8px;
+
+                    }
+
+                    .prodDiscription {
+                        font-family: Roboto;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 18.2px;
+                        color: #1E3354;
+                        margin-top: 10px;
+                    }
+
+                    .prod-image {
+                        width: 100%;
+                        height: 260px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .offerPrice {
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22.5px;
+                        color: #111111;
+                        margin-right: 10px;
+                    }
+
+                    .ogPrice {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16.8px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #8C8C8C;
+                        margin-right: 10px;
+                    }
+
+                    .offer-text {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 16.8px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #038A10;
+                    }
+
+                    button {
+                        width: 100%;
+                        height: 42px;
+                        border: 1px solid #02400C;
+                        border-radius: 5px;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 22.4px;
+                        text-align: center;
+                        color: #02400C;
+                        background-color: white;
+                        margin-top: 1rem;
+                    }
+
+
+
+                }
+            }
+        }
+    }
+}
